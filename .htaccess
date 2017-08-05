@@ -1,0 +1,19 @@
+RewriteEngine on
+Options All -Indexes
+
+RewriteRule ^img/([0-9]+)/(.*)\.(gif|jpg|jpeg|png|PNG|JPG|JPEG)$ mod/nvhresize.php?src=/images/$2\.$3&w=$1
+RewriteRule ^img/([0-9]+)_([0-9]+)/(.*)\.(gif|jpg|jpeg|png|PNG|JPG|JPEG)$ mod/nvhresize.php?src=/images/$3\.$4&w=$1&h=$2
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+#chong trom file
+RewriteEngine on
+RewriteCond % !^$
+RewriteCond % !^http://(www\.)?vienthammyevaxinh.com/.*$ [NC]
+#RewriteRule \.(gif|jpg)$ – [F]
+#RewriteRule \.(gif|jpg)$ http://www.vienthammyevaxinh.com/file.jpg [R,L]

@@ -1,0 +1,48 @@
+.explain-action {
+    margin-left: 10px;
+}
+.slider-img-box .small-box {
+    margin-bottom: 0;
+    margin: 0 auto;
+    height: 159px;
+    background: #fff;
+    border: 1px dashed #ddd;
+}
+.slider-img-box .small-box img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+#menu-refresh .box {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+}
+#menu-refresh .box .box-header {
+    padding-bottom: 0;
+}
+#menu-refresh .box .box-header h4 {
+    width: 100%;
+}
+#menu-refresh .box .box-header h4 a {
+    font-size: 14px;
+    font-weight: bold;
+}
+#menu-refresh .box .box-header h4 span {
+    float:right;
+    padding-right: 10px;
+    font-size: 12px;
+}
+#menu-refresh .box .panel-collapse {
+    background: #fff !important;
+    border-top: 1px solid #ddd;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
